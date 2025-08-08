@@ -112,4 +112,81 @@
   .timeline-line {
     background: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--accent)));
   }
+
+  /* Animation delays */
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Glowing effect */
+  .glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  /* Parallax scrolling */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Smooth reveal animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Interactive skill bars */
+  .skill-bar {
+    height: 8px;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)));
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease-out;
+  }
+
+  .skill-bar.animate {
+    transform: scaleX(1);
+  }
+
+  /* Modern glass morphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Hover glow for cards */
+  .hover-glow:hover {
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+    transform: translateY(-8px);
+  }
 }

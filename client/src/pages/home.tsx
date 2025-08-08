@@ -10,15 +10,17 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 font-sans text-gray-800">
+    <div className="bg-white dark:bg-gray-900 font-sans text-gray-800 dark:text-gray-200 overflow-x-hidden">
       <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <EducationSection />
-      <ContactSection />
+      <main className="relative">
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <EducationSection />
+        <ContactSection />
+      </main>
       <Footer />
     </div>
   );
