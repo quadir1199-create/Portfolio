@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       gradient: "from-blue-600 to-indigo-600",
       tags: ["Banking", "Enterprise", "Multi-platform"],
       impact: "10M QAR Savings",
-      tech: ["Android", "Kotlin", "MVVM"]
+      tech: ["Flutter", "Dart", "MVVM"]
     },
     {
       name: "Adani One",
@@ -33,11 +33,11 @@ export default function ProjectsSection() {
       description: "Seamless flight and hotel bookings with improved stability, performance optimization, and enhanced user experience.",
       category: "Flights & Hotels",
       icon: "fas fa-hotel",
-      link: "https://play.google.com/store/apps/details?id=com.akbartravel.Akbar%20Travels&hl=en",
+      link: "https://play.google.com/store/search?q=akbar+travels&c=apps",
       gradient: "from-purple-600 to-pink-600",
       tags: ["Travel", "Hotels", "Booking"],
       impact: "1M+ Downloads",
-      tech: ["Android", "Java", "REST APIs"]
+      tech: ["Flutter", "Dart", "REST APIs"]
     },
     {
       name: "10times",
@@ -59,7 +59,7 @@ export default function ProjectsSection() {
       gradient: "from-red-500 to-pink-500",
       tags: ["Healthcare", "Management", "Caregiving"],
       impact: "Clinical Impact",
-      tech: ["Flutter", "Firebase", "Healthcare APIs"]
+      tech: ["Android", "Kotlin", "Healthcare APIs"]
     },
     {
       name: "Postfit",
@@ -70,7 +70,7 @@ export default function ProjectsSection() {
       gradient: "from-indigo-600 to-purple-600",
       tags: ["Fitness", "Health", "Tracking"],
       impact: "Health & Wellness",
-      tech: ["Android", "Health APIs", "Firebase"]
+      tech: ["Flutter", "Health APIs", "Firebase"]
     }
   ];
 
