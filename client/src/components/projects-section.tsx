@@ -62,15 +62,15 @@ export default function ProjectsSection() {
       tech: ["Flutter", "Firebase", "Healthcare APIs"]
     },
     {
-      name: "Tapestri",
-      description: "Advanced mobile analytics and data collection platform for market research with real-time insights and reporting.",
-      category: "Mobile Analytics Platform",
-      icon: "fas fa-mobile-alt",
-      link: "https://play.google.com/store/apps/details?id=com.tapestri.io&hl=en_IN",
+      name: "Postfit",
+      description: "Comprehensive fitness and health tracking application with workout planning, nutrition tracking, and progress monitoring.",
+      category: "Fitness & Health Platform",
+      icon: "fas fa-dumbbell",
+      link: "https://play.google.com/store/apps/details?id=com.postfit.app&hl=en&gl=US",
       gradient: "from-indigo-600 to-purple-600",
-      tags: ["Analytics", "Data Collection", "Research"],
-      impact: "Market Research",
-      tech: ["Android", "Analytics SDKs", "Big Data"]
+      tags: ["Fitness", "Health", "Tracking"],
+      impact: "Health & Wellness",
+      tech: ["Android", "Health APIs", "Firebase"]
     }
   ];
 

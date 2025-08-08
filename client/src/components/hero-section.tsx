@@ -7,7 +7,7 @@ export default function HeroSection() {
 
   const roles = [
     "Senior Software Engineer",
-    "Tech Lead",
+    "Mobile Team Lead",
     "Android Expert", 
     "Flutter Developer",
     "Solution Architect"
@@ -121,6 +121,7 @@ export default function HeroSection() {
                   src={profileImage} 
                   alt="Abdul Quadir - Senior Software Engineer"
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center 20%' }}
                 />
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-20"></div>

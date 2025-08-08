@@ -39,7 +39,7 @@ export default function ExperienceSection() {
               <div className="lg:w-1/2 lg:pl-8">
                 <div className="bg-gray-50 p-8 rounded-xl card-hover">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <h3 className="text-xl font-bold text-primary">Lead Engineer</h3>
+                    <h3 className="text-xl font-bold text-primary">Mobile Team Lead</h3>
                     <span className="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Apr 2022 - Jan 2023</span>
                   </div>
                   <h4 className="text-lg font-semibold mb-4">Kellton Tech, Gurugram</h4>
