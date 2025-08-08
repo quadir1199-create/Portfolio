@@ -113,9 +113,9 @@ export default function SkillsSection() {
                     </div>
                     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
                       <div 
-                        className={`skill-bar bg-gradient-to-r ${category.gradient} h-2 rounded-full ${skillsAnimated ? 'animate' : ''}`}
+                        className={`h-2 rounded-full transition-all duration-1000 ease-out bg-gradient-to-r ${category.gradient}`}
                         style={{ 
-                          transform: skillsAnimated ? `scaleX(${skill.level / 100})` : 'scaleX(0)',
+                          width: skillsAnimated ? `${skill.level}%` : '0%',
                           transitionDelay: `${(categoryIndex * 300) + (skillIndex * 100)}ms`
                         }}
                       ></div>
