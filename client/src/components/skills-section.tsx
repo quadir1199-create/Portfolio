@@ -88,19 +88,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Statistics */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
-            <div className="text-gray-600 dark:text-gray-300">Technologies</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">100+</div>
-            <div className="text-gray-600 dark:text-gray-300">Projects</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
-            <div className="text-gray-600 dark:text-gray-300">Team Members</div>
-          </div>
+        <div className="mt-20 text-center">
           <div className="text-center">
             <div className="text-3xl font-bold text-orange-600 mb-2">11+</div>
             <div className="text-gray-600 dark:text-gray-300">Years Experience</div>
