@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Quadir - Senior Software Engineer & Tech Lead</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#64748b',
+                        accent: '#0ea5e9',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #1e40af, #0ea5e9);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold gradient-text">Abdul Quadir</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                        <a href="#skills" class="text-gray-600 hover:text-primary transition-colors">Skills</a>
+                        <a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Experience</a>
+                        <a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+                        <a href="#education" class="text-gray-600 hover:text-primary transition-colors">Education</a>
+                        <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-primary">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-600 hover:text-primary">Skills</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-600 hover:text-primary">Experience</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-600 hover:text-primary">Projects</a>
+                <a href="#education" class="block px-3 py-2 text-gray-600 hover:text-primary">Education</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-accent text-white pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Abdul Quadir</h1>
+                <p class="text-xl md:text-2xl mb-6 text-blue-100">Senior Software Engineer & Tech Lead</p>
+                <p class="text-lg mb-8 text-blue-100 max-w-3xl mx-auto">
+                    11+ years of expertise in Android & Flutter development, delivering scalable, high-performance solutions across banking, fintech, e-commerce, and enterprise domains.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Doha, Qatar</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone"></i>
+                        <span>+974 71287994</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>quadir.1199@gmail.com</span>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Contact Me
+                    </a>
+                    <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                        <!-- @FUNCTIONALITY: Should trigger download of PDF resume -->
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Innovative and results-driven Lead Developer with 11+ years of expertise in Android & Flutter development, delivering scalable, high-performance solutions across banking, fintech, e-commerce, and enterprise domains.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Proven track record in end-to-end project delivery, from architecture to deployment, including the Corporate Internet Banking platform and the CBQ Finance Trade Portal that achieved <strong class="text-primary">10M QAR in cost savings</strong>.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Skilled in team leadership, solution architecture, and cross-platform strategies, ensuring mission-critical projects are delivered on time and exceed expectations. Recognized for technical excellence, mentoring, and driving innovation in fast-paced environments.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">11+</div>
+                        <div class="text-gray-600">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">10M</div>
+                        <div class="text-gray-600">QAR Savings</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">1M+</div>
+                        <div class="text-gray-600">App Downloads</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">20+</div>
+                        <div class="text-gray-600">Projects Delivered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Technical Skills</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fab fa-android text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Mobile Development</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Android SDK</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Java/Kotlin Programming</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Flutter SDK</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Dart</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Android Jetpack Components</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> State Management</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-code text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Architecture & APIs</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> MVVM/MVP Architecture</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> RESTful APIs Integration</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Performance Optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Firebase</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Material Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> UI/UX Design</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-cogs text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">DevOps & Collaboration</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> CI/CD</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Git Version Control</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Agile/Scrum Methodologies</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Code Review & Collaboration</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Debugging & Troubleshooting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> App Responsiveness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Work Experience</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+            </div>
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 transform -translate-x-px h-full w-0.5 timeline-line hidden lg:block"></div>
+                
+                <!-- Experience Items -->
+                <div class="space-y-12">
+                    <!-- Current Position -->
+                    <div class="relative flex items-center lg:justify-between">
+                        <div class="lg:w-1/2 lg:pr-8">
+                            <div class="bg-gray-50 p-8 rounded-xl card-hover lg:ml-auto">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <h3 class="text-xl font-bold text-primary">Senior Software Engineer</h3>
+                                    <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">May 2023 - Present</span>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-4">Commercial Bank of Qatar (Vismaya Contractor)</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Designed, architected, and delivered a next-generation Corporate Internet Banking (CIB) portal</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Designed complete in-house solution for CBQ's Finance Trade Portal (FTP), achieving <strong>10M QAR savings</strong></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Created unified ticketing and complaint management system for POS and ATM operations</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white hidden lg:block"></div>
+                        <div class="lg:w-1/2 lg:pl-8"></div>
+                    </div>
+
+                    <!-- Kellton Tech -->
+                    <div class="relative flex items-center lg:justify-between">
+                        <div class="lg:w-1/2 lg:pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white hidden lg:block"></div>
+                        <div class="lg:w-1/2 lg:pl-8">
+                            <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <h3 class="text-xl font-bold text-primary">Lead Engineer</h3>
+                                    <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Apr 2022 - Jan 2023</span>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-4">Kellton Tech, Gurugram</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed Adani One: Travel and Beyond app, contributing to <strong>1M+ downloads</strong></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Engineered core features for Akbar Travels One App achieving <strong>1M+ downloads</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SubcoDevs -->
+                    <div class="relative flex items-center lg:justify-between">
+                        <div class="lg:w-1/2 lg:pr-8">
+                            <div class="bg-gray-50 p-8 rounded-xl card-hover lg:ml-auto">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <h3 class="text-xl font-bold text-primary">Sr. Mobile Application Developer</h3>
+                                    <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Oct 2020 - Apr 2022</span>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-4">SubcoDevs, Noida</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed various client apps across Android, Flutter, and Android TV platforms</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Implemented CI/CD with Fastlane for updating apps on POS systems</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Handled complete Play Store and App Store submissions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-secondary rounded-full border-4 border-white hidden lg:block"></div>
+                        <div class="lg:w-1/2 lg:pl-8"></div>
+                    </div>
+
+                    <!-- 10times.com -->
+                    <div class="relative flex items-center lg:justify-between">
+                        <div class="lg:w-1/2 lg:pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-secondary rounded-full border-4 border-white hidden lg:block"></div>
+                        <div class="lg:w-1/2 lg:pl-8">
+                            <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <h3 class="text-xl font-bold text-primary">Sr. Android App Developer</h3>
+                                    <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Dec 2015 - Oct 2020</span>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-4">10times.com, Noida</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed 10times - Find Events & Network with <strong>100K+ downloads</strong></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Transitioned to white-label event apps project</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Created library and automated processes for app creation and publication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MixORG -->
+                    <div class="relative flex items-center lg:justify-between">
+                        <div class="lg:w-1/2 lg:pr-8">
+                            <div class="bg-gray-50 p-8 rounded-xl card-hover lg:ml-auto">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <h3 class="text-xl font-bold text-primary">Intern & Android App Developer</h3>
+                                    <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Jul 2014 - Dec 2015</span>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-4">MixORG, Noida</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Interned and subsequently joined as Android app developer</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed 4 apps within a team of 4 individuals</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Created a 2D mobile game</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-400 rounded-full border-4 border-white hidden lg:block"></div>
+                        <div class="lg:w-1/2 lg:pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Publications Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Published Applications</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Portfolio of published mobile applications available on Google Play Store with millions of downloads</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CB Corporate Banking -->
+                <div class="bg-white rounded-xl shadow-sm card-hover overflow-hidden">
+                    <div class="bg-gradient-to-r from-primary to-accent p-6 text-white">
+                        <i class="fas fa-university text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">CB Corporate Banking</h3>
+                        <p class="text-blue-100">Enterprise Banking Solution</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Next-generation Corporate Internet Banking portal with seamless multi-platform access.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.cbq.corporatemobile&hl=en" 
+                           target="_blank" 
+                           class="inline-flex items-center text-primary hover:text-accent transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            View on Play Store
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Adani One -->
+                <div class="bg-white rounded-xl shadow-sm card-hover overflow-hidden">
+                    <div class="bg-gradient-to-r from-accent to-primary p-6 text-white">
+                        <i class="fas fa-plane text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Adani One</h3>
+                        <p class="text-blue-100">Travel & Beyond - 1M+ Downloads</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Comprehensive travel app providing fast, reliable, and user-friendly travel experience.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.adanione.android&hl=en" 
+                           target="_blank" 
+                           class="inline-flex items-center text-primary hover:text-accent transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            View on Play Store
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Akbar Travels -->
+                <div class="bg-white rounded-xl shadow-sm card-hover overflow-hidden">
+                    <div class="bg-gradient-to-r from-primary to-accent p-6 text-white">
+                        <i class="fas fa-hotel text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">AkbarTravels</h3>
+                        <p class="text-blue-100">Flights & Hotels - 1M+ Downloads</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Seamless flight and hotel bookings with improved stability and performance.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.akbartravel.Akbar%20Travels&hl=en" 
+                           target="_blank" 
+                           class="inline-flex items-center text-primary hover:text-accent transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            View on Play Store
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10times -->
+                <div class="bg-white rounded-xl shadow-sm card-hover overflow-hidden">
+                    <div class="bg-gradient-to-r from-secondary to-primary p-6 text-white">
+                        <i class="fas fa-calendar-alt text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">10times</h3>
+                        <p class="text-blue-100">Find Events & Network - 100K+ Downloads</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Event discovery and networking platform connecting professionals worldwide.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.tentimes&hl=en" 
+                           target="_blank" 
+                           class="inline-flex items-center text-primary hover:text-accent transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            View on Play Store
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rythmos CM -->
+                <div class="bg-white rounded-xl shadow-sm card-hover overflow-hidden">
+                    <div class="bg-gradient-to-r from-accent to-secondary p-6 text-white">
+                        <i class="fas fa-heartbeat text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Rythmos CM</h3>
+                        <p class="text-blue-100">Healthcare Management</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Healthcare management application for caregivers and medical professionals.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.intrex.caregiver" 
+                           target="_blank" 
+                           class="inline-flex items-center text-primary hover:text-accent transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            View on Play Store
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tapestri -->
+                <div class="bg-white rounded-xl shadow-sm card-hover overflow-hidden">
+                    <div class="bg-gradient-to-r from-primary to-secondary p-6 text-white">
+                        <i class="fas fa-mobile-alt text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Tapestri</h3>
+                        <p class="text-blue-100">Mobile Analytics Platform</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Advanced mobile analytics and data collection platform for market research.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.tapestri.io&hl=en_IN" 
+                           target="_blank" 
+                           class="inline-flex items-center text-primary hover:text-accent transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            View on Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects -->
+            <div class="mt-12 text-center">
+                <h3 class="text-xl font-semibold mb-4">Additional Projects</h3>
+                <p class="text-gray-600">
+                    <strong>Other Notable Projects:</strong> My AdaniGas, Zoundz: Music for Pet Anxiety, Postfit, and various enterprise applications
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Education & Courses</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Education</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-primary">B.Tech in Computer Science Engineering</h4>
+                                    <p class="text-gray-600">Dr. A.P.J. Abdul Kalam Technical University</p>
+                                    <p class="text-gray-500 text-sm">Ghaziabad</p>
+                                </div>
+                                <span class="text-sm font-medium text-gray-500">2014</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-primary">Intermediate</h4>
+                                    <p class="text-gray-600">KDB Public School</p>
+                                    <p class="text-gray-500 text-sm">Ghaziabad</p>
+                                </div>
+                                <span class="text-sm font-medium text-gray-500">2009</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-primary">High School</h4>
+                                    <p class="text-gray-600">DAV Public School</p>
+                                    <p class="text-gray-500 text-sm">Ghaziabad</p>
+                                </div>
+                                <span class="text-sm font-medium text-gray-500">2007</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Certifications</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-primary">Flutter Course</h4>
+                                    <p class="text-gray-600">Udemy</p>
+                                    <p class="text-gray-500 text-sm">Complete Flutter Development</p>
+                                </div>
+                                <i class="fas fa-certificate text-accent text-2xl"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-primary">Android Development</h4>
+                                    <p class="text-gray-600">Simplilearn</p>
+                                    <p class="text-gray-500 text-sm">Android App Development Certificate</p>
+                                </div>
+                                <i class="fas fa-certificate text-accent text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-bold mb-6">Languages</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <i class="fas fa-language text-2xl text-primary mb-2"></i>
+                                <p class="font-semibold">English</p>
+                                <p class="text-sm text-gray-600">Professional</p>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <i class="fas fa-language text-2xl text-primary mb-2"></i>
+                                <p class="font-semibold">Hindi/Urdu</p>
+                                <p class="text-sm text-gray-600">Native</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+                    Ready to discuss new opportunities or collaborate on exciting projects
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Phone</h3>
+                    <p class="text-blue-100">+974 71287994</p>
+                    <p class="text-blue-100">+91 88266 28482</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <p class="text-blue-100">quadir.1199@gmail.com</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Location</h3>
+                    <p class="text-blue-100">Doha, Qatar</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/abdul-quadir-982905106" 
+                       target="_blank" 
+                       class="text-blue-100 hover:text-white transition-colors">
+                        Connect with me
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="mailto:quadir.1199@gmail.com" 
+                   class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+                    <i class="fas fa-paper-plane mr-2"></i>
+                    Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2024 Abdul Quadir. All rights reserved. | Senior Software Engineer & Tech Lead
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        (function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        })();
+
+        // Smooth scroll for navigation links
+        (function() {
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80; // Account for fixed header
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        })();
+
+        // Add scroll effect to header
+        (function() {
+            const nav = document.querySelector('nav');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+                lastScrollY = window.scrollY;
+            });
+        })();
+
+        // TODO: Implement resume download functionality
+        // TODO: Add form validation for contact form
+        // TODO: Add loading states for external links
+        // TODO: Implement analytics tracking for user interactions
+    </script>
+</body>
+</html>
