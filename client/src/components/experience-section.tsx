@@ -17,14 +17,16 @@ export default function ExperienceSection() {
               <div className="lg:w-1/2 lg:pr-8">
                 <div className="bg-gray-50 p-8 rounded-xl card-hover lg:ml-auto">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <h3 className="text-xl font-bold text-primary">Senior Software Engineer</h3>
+                    <h3 className="text-xl font-bold text-primary">Flutter Team Lead</h3>
                     <span className="text-sm font-medium text-gray-500 mt-1 sm:mt-0">May 2023 - Present</span>
                   </div>
-                  <h4 className="text-lg font-semibold mb-4">Commercial Bank of Qatar (Vismaya Contractor)</h4>
+                  <h4 className="text-lg font-semibold mb-4">Commercial Bank of Qatar (via Vismaya)</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Designed, architected, and delivered a next-generation Corporate Internet Banking (CIB) portal</li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Designed complete in-house solution for CBQ's Finance Trade Portal (FTP), achieving <strong>10M QAR savings</strong></li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Created unified ticketing and complaint management system for POS and ATM operations</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Lead a <strong>team of 10+ mobile engineers</strong>, owning complete delivery: solution architecture, technical design, sprint planning, code reviews, Git strategy, CI/CD, production releases, mentoring, and stakeholder communication</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Architected the next-generation Corporate Internet Banking (CIB) platform (Flutter, Clean Architecture, MVVM, Riverpod) used by thousands of enterprise users; implemented SSL pinning, OpenID Connect, and biometric authentication</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Designed and delivered the in-house Finance Trade Portal (FTP), replacing outsourced licensed software — <strong>~10M QAR saved over a 5-year licensing period</strong></li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Built a unified ticketing and complaint-management system for POS and ATM operations across web and mobile</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Own payment integrations and production-issue resolution; run release management across Play Store and App Store</li>
                   </ul>
                 </div>
               </div>
@@ -39,13 +41,13 @@ export default function ExperienceSection() {
               <div className="lg:w-1/2 lg:pl-8">
                 <div className="bg-gray-50 p-8 rounded-xl card-hover">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <h3 className="text-xl font-bold text-primary">Mobile Team Lead</h3>
+                    <h3 className="text-xl font-bold text-primary">Lead Engineer</h3>
                     <span className="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Apr 2022 - Jan 2023</span>
                   </div>
                   <h4 className="text-lg font-semibold mb-4">Kellton Tech, Gurugram</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed Adani One: Travel and Beyond app, contributing to <strong>1M+ downloads</strong></li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Engineered core features for Akbar Travels One App achieving <strong>1M+ downloads</strong></li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed and optimized Adani One: Travel and Beyond (<strong>1M+ downloads</strong>), delivering fast, reliable booking experiences across flights, hotels, and airport services</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Engineered core booking features for AkbarTravels: Flights & Hotels (<strong>1M+ downloads</strong>), improving app stability and performance</li>
                   </ul>
                 </div>
               </div>
@@ -61,9 +63,8 @@ export default function ExperienceSection() {
                   </div>
                   <h4 className="text-lg font-semibold mb-4">SubcoDevs, Noida</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed various client apps across Android, Flutter, and Android TV platforms</li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Implemented CI/CD with Fastlane for updating apps on POS systems</li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Handled complete Play Store and App Store submissions</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Delivered client apps across Android, Flutter, and Android TV; owned Play Store and App Store releases end to end</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Implemented CI/CD with Fastlane to automate app updates on POS device fleets</li>
                   </ul>
                 </div>
               </div>
@@ -83,9 +84,8 @@ export default function ExperienceSection() {
                   </div>
                   <h4 className="text-lg font-semibold mb-4">10times.com, Noida</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed 10times - Find Events & Network with <strong>100K+ downloads</strong></li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Transitioned to white-label event apps project</li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Created library and automated processes for app creation and publication</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Built 10times – Find Events & Network (<strong>100K+ downloads</strong>), the flagship app of the world's largest event-discovery platform</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Architected the white-label event-app platform: a shared library and automated pipeline enabling rapid rollout of branded apps from one codebase</li>
                   </ul>
                 </div>
               </div>
@@ -96,14 +96,12 @@ export default function ExperienceSection() {
               <div className="lg:w-1/2 lg:pr-8">
                 <div className="bg-gray-50 p-8 rounded-xl card-hover lg:ml-auto">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <h3 className="text-xl font-bold text-primary">Intern & Android App Developer</h3>
+                    <h3 className="text-xl font-bold text-primary">Android App Developer (Intern → Full-time)</h3>
                     <span className="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Jul 2014 - Dec 2015</span>
                   </div>
                   <h4 className="text-lg font-semibold mb-4">MixORG, Noida</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Interned and subsequently joined as Android app developer</li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Developed 4 apps within a team of 4 individuals</li>
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>Created a 2D mobile game</li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i>First engineering role; shipped 4 production apps in a 4-person team</li>
                   </ul>
                 </div>
               </div>

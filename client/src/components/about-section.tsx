@@ -9,18 +9,18 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg leading-relaxed mb-6">
-              Innovative and results-driven Lead Developer with 11+ years of expertise in Android & Flutter development, delivering scalable, high-performance solutions across banking, fintech, e-commerce, and enterprise domains.
+              Flutter Team Lead with 12 years in mobile engineering, currently leading a <strong className="text-primary">10+ engineer team</strong> at Commercial Bank of Qatar delivering corporate banking applications used by thousands of enterprise users. Own end-to-end delivery: architecture, technical design, sprint planning, code reviews, Git strategy, CI/CD, and production releases.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              Proven track record in end-to-end project delivery, from architecture to deployment, including the Corporate Internet Banking platform and the CBQ Finance Trade Portal that achieved <strong className="text-primary">10M QAR in cost savings</strong>.
+              Replaced outsourced trade-finance software with an in-house platform, saving <strong className="text-primary">~10M QAR over 5 years</strong>. Deep expertise in Clean Architecture, MVVM, SOLID, Riverpod/BLoC, and banking-grade security (SSL pinning, OpenID Connect, payment integrations).
             </p>
             <p className="text-lg leading-relaxed">
-              Skilled in team leadership, solution architecture, and cross-platform strategies, ensuring mission-critical projects are delivered on time and exceed expectations. Recognized for technical excellence, mentoring, and driving innovation in fast-paced environments.
+              Drive AI-assisted engineering practices (Copilot, Claude, Cursor) across the team to raise code-review quality and delivery velocity. Previously shipped consumer apps with 1M+ downloads each (Adani One, AkbarTravels).
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">11+</div>
+              <div className="text-4xl font-bold text-primary mb-2">12</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center">
@@ -32,8 +32,8 @@ export default function AboutSection() {
               <div className="text-gray-600">App Downloads</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">20+</div>
-              <div className="text-gray-600">Projects Delivered</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
+              <div className="text-gray-600">Engineers Led</div>
             </div>
           </div>
         </div>

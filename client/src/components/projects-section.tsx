@@ -8,14 +8,14 @@ export default function ProjectsSection() {
   const projects = [
     {
       name: "CB Corporate Banking",
-      description: "Next-generation Corporate Internet Banking portal with seamless multi-platform access and advanced banking features.",
+      description: "Next-generation Corporate Internet Banking (CIB) platform used by thousands of enterprise users across mobile, tablet, and desktop, with banking-grade security including SSL pinning, OpenID Connect, and biometric authentication.",
       category: "Enterprise Banking Solution",
       icon: "fas fa-university",
       link: "https://play.google.com/store/apps/details?id=com.cbq.corporatemobile&hl=en",
       gradient: "from-blue-600 to-indigo-600",
       tags: ["Banking", "Enterprise", "Multi-platform"],
-      impact: "10M QAR Savings",
-      tech: ["Flutter", "Dart", "MVVM"]
+      impact: "Thousands of Enterprise Users",
+      tech: ["Flutter", "Clean Architecture", "MVVM", "Riverpod"]
     },
     {
       name: "Adani One",
@@ -202,6 +202,10 @@ export default function ProjectsSection() {
             <h3 className="text-2xl font-bold mb-4 text-blue-300">Additional Notable Projects</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
               <div className="bg-white/5 p-4 rounded-lg border border-white/10">
+                <h4 className="font-semibold text-white mb-2">Finance Trade Portal (FTP)</h4>
+                <p className="text-gray-300">In-house platform replacing licensed software — ~10M QAR saved</p>
+              </div>
+              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
                 <h4 className="font-semibold text-white mb-2">My AdaniGas</h4>
                 <p className="text-gray-300">Gas booking and management app</p>
               </div>
@@ -210,12 +214,8 @@ export default function ProjectsSection() {
                 <p className="text-gray-300">Music therapy for pet anxiety</p>
               </div>
               <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                <h4 className="font-semibold text-white mb-2">Postfit</h4>
-                <p className="text-gray-300">Fitness and health tracking</p>
-              </div>
-              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                <h4 className="font-semibold text-white mb-2">Enterprise Apps</h4>
-                <p className="text-gray-300">Various corporate solutions</p>
+                <h4 className="font-semibold text-white mb-2">Enterslice</h4>
+                <p className="text-gray-300">Enterprise compliance solution</p>
               </div>
             </div>
           </div>

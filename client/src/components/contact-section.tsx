@@ -14,7 +14,7 @@ export default function ContactSection() {
               <i className="fas fa-phone text-2xl"></i>
             </div>
             <h3 className="font-semibold mb-2">Phone</h3>
-            <p className="text-blue-100">+974 71287994</p>
+            <p className="text-blue-100">+974 7128 7994</p>
             <p className="text-blue-100">+91 88266 28482</p>
           </div>
           <div className="text-center">
