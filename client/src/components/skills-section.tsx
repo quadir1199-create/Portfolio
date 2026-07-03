@@ -2,37 +2,37 @@ export default function SkillsSection() {
   const skills = [
     {
       category: "Languages & Mobile",
-      icon: "📱",
+      icon: "fas fa-mobile-screen-button",
       color: "bg-blue-500",
       items: ["Dart", "Kotlin", "Java", "Flutter", "Android SDK", "Android Jetpack", "Android TV"]
     },
     {
       category: "Architecture & State",
-      icon: "⚙️",
+      icon: "fas fa-diagram-project",
       color: "bg-purple-500",
       items: ["Clean Architecture", "MVVM", "SOLID Principles", "Riverpod", "BLoC", "RESTful API Integration", "Offline-first Design"]
     },
     {
       category: "Security (Banking)",
-      icon: "🔒",
+      icon: "fas fa-shield-alt",
       color: "bg-slate-600",
       items: ["SSL Pinning", "OpenID Connect / OAuth 2.0", "Biometric Authentication", "Payment Integrations"]
     },
     {
       category: "CI/CD & Release",
-      icon: "🚀",
+      icon: "fas fa-rocket",
       color: "bg-teal-500",
       items: ["GitHub Actions", "Codemagic", "Fastlane", "Firebase (Crashlytics, FCM, Remote Config)", "Play Store & App Store Release Management", "Git"]
     },
     {
       category: "AI & Productivity",
-      icon: "🤖",
+      icon: "fas fa-robot",
       color: "bg-indigo-500",
       items: ["GitHub Copilot", "Claude", "Cursor", "LLM API Integration (OpenAI / Gemini)", "Firebase ML Kit", "Prompt Engineering"]
     },
     {
       category: "Leadership & Quality",
-      icon: "👨‍💼",
+      icon: "fas fa-users",
       color: "bg-green-500",
       items: ["Code Review at Scale", "Performance Optimization", "Agile / Scrum", "Sprint Planning", "Mentoring", "Stakeholder Communication", "Production Incident Resolution"]
     }
@@ -58,7 +58,7 @@ export default function SkillsSection() {
               {/* Category Header */}
               <div className="flex items-center mb-6">
                 <div className={`w-12 h-12 ${skillGroup.color} rounded-lg flex items-center justify-center text-white text-xl mr-4`}>
-                  {skillGroup.icon}
+                  <i className={skillGroup.icon}></i>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">{skillGroup.category}</h3>
               </div>

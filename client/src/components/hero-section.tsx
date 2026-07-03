@@ -131,7 +131,7 @@ export default function HeroSection() {
                 <i className="fab fa-android text-2xl text-green-500"></i>
               </div>
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-bounce animation-delay-1000">
-                <i className="fab fa-flutter text-2xl text-blue-500"></i>
+                <i className="fas fa-layer-group text-2xl text-blue-500"></i>
               </div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-bounce animation-delay-2000">
                 <i className="fas fa-code text-2xl text-purple-500"></i>
