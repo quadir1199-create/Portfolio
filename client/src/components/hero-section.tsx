@@ -6,10 +6,9 @@ export default function HeroSection() {
   const [currentRole, setCurrentRole] = useState(0);
 
   const roles = [
-    "Flutter Team Lead",
+    "Lead Developer",
     "Mobile Architect",
     "Banking & Fintech Engineer",
-    "Team of 10+ Engineers",
     "Android & Flutter Expert"
   ];
 
@@ -23,7 +22,7 @@ export default function HeroSection() {
 
   const handleDownloadResume = () => {
     window.open(
-      'https://drive.google.com/uc?export=download&id=1vaInvcY1y87zxW6Vn2xkXoWeaxLoWj_l',
+      'https://drive.google.com/uc?export=download&id=1tbCR5f5gGmNqKFdV_XJ-KnD9lvthvaSa',
       '_blank'
     );
   };
@@ -68,8 +67,8 @@ export default function HeroSection() {
             </div>
             
             <p className="text-lg mb-8 text-blue-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Flutter Team Lead with <span className="font-bold text-white">12 years</span> in mobile engineering,
-              currently leading a <span className="font-bold text-white">10+ engineer team</span> at Commercial Bank of Qatar.
+              Lead Developer with <span className="font-bold text-white">12 years</span> in mobile engineering,
+              currently at Commercial Bank of Qatar.
               Architected an in-house platform that saved <span className="font-bold text-yellow-300">~10M QAR</span>,
               and previously shipped consumer apps with <span className="font-bold text-yellow-300">1M+ downloads each</span>.
             </p>

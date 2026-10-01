@@ -17,7 +17,7 @@ export default function ExperienceSection() {
               <div className="lg:w-1/2 lg:pr-8">
                 <div className="bg-gray-50 p-8 rounded-xl card-hover lg:ml-auto">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <h3 className="text-xl font-bold text-primary">Flutter Team Lead</h3>
+                    <h3 className="text-xl font-bold text-primary">Lead Developer</h3>
                     <span className="text-sm font-medium text-gray-500 mt-1 sm:mt-0">May 2023 - Present</span>
                   </div>
                   <div className="flex items-center gap-3 mb-4">
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
                     <h4 className="text-lg font-semibold">Commercial Bank of Qatar (via Vismaya)</h4>
                   </div>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i><span>Lead a <strong>team of 10+ mobile engineers</strong>, owning complete delivery: solution architecture, technical design, sprint planning, code reviews, Git strategy, CI/CD, production releases, mentoring, and stakeholder communication</span></li>
+                    <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i><span>Own complete delivery: solution architecture, technical design, sprint planning, code reviews, Git strategy, CI/CD, production releases, mentoring, and stakeholder communication</span></li>
                     <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i><span>Architected the next-generation Corporate Internet Banking (CIB) platform (Flutter, Clean Architecture, MVVM, Riverpod) used by thousands of enterprise users; implemented SSL pinning, OpenID Connect, and biometric authentication</span></li>
                     <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i><span>Designed and delivered the in-house Finance Trade Portal (FTP), replacing outsourced licensed software — <strong>~10M QAR saved over a 5-year licensing period</strong></span></li>
                     <li className="flex items-start"><i className="fas fa-chevron-right text-accent mt-1 mr-2 text-xs"></i><span>Built a unified ticketing and complaint-management system for POS and ATM operations across web and mobile</span></li>

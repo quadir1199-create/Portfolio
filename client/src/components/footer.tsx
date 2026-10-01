@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-gray-400">
-            © {year} Abdul Quadir. All rights reserved. | Flutter Team Lead & Mobile Architect
+            © {year} Abdul Quadir. All rights reserved. | Lead Developer & Mobile Architect
           </p>
         </div>
       </div>

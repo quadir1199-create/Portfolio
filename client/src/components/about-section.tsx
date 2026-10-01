@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg leading-relaxed mb-6">
-              Flutter Team Lead with 12 years in mobile engineering, currently leading a <strong className="text-primary">10+ engineer team</strong> at Commercial Bank of Qatar delivering corporate banking applications used by thousands of enterprise users. Own end-to-end delivery: architecture, technical design, sprint planning, code reviews, Git strategy, CI/CD, and production releases.
+              Lead Developer with 12 years in mobile engineering, currently at Commercial Bank of Qatar delivering corporate banking applications used by thousands of enterprise users. Own end-to-end delivery: architecture, technical design, sprint planning, code reviews, Git strategy, CI/CD, and production releases.
             </p>
             <p className="text-lg leading-relaxed mb-6">
               Replaced outsourced trade-finance software with an in-house platform, saving <strong className="text-primary">~10M QAR over 5 years</strong>. Deep expertise in Clean Architecture, MVVM, SOLID, Riverpod/BLoC, and banking-grade security (SSL pinning, OpenID Connect, payment integrations).
@@ -27,13 +27,9 @@ export default function AboutSection() {
               <div className="text-4xl font-bold text-primary mb-2">10M</div>
               <div className="text-gray-600">QAR Savings</div>
             </div>
-            <div className="text-center">
+            <div className="text-center col-span-2">
               <div className="text-4xl font-bold text-primary mb-2">1M+</div>
               <div className="text-gray-600">App Downloads</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
-              <div className="text-gray-600">Engineers Led</div>
             </div>
           </div>
         </div>
